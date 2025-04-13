@@ -158,3 +158,4 @@ d2 = 'hello,world'
 print(d2.split())
 print(d2.split('l'))
 print(d2.split('l',1))
+print(5//2)
