@@ -31,7 +31,7 @@ video_path = r"E:\SteamLibrary\steamapps\workshop\content\431960\3333313628\斗�
 webbrowser.open(video_path)
 #2.获取视频元信息
 
-"""from moviepy.editor import VideoFileClip
+from moviepy.editor import VideoFileClip
 
 video_path = r"D:\视频\example.mp4"
 
@@ -41,7 +41,7 @@ try:
         print(f"分辨率: {video.size}")  # (宽度, 高度)
         print(f"帧率: {video.fps}")
 except Exception as e:
-    print(f"错误: {e}")"""
+    print(f"错误: {e}")
 #写文件
 with open(r"C:\Users\34952\编程实验.txt",'a',encoding= 'utf-8') as f:#'a'可以在后面追加字符，而不是直接覆盖原文件
     f.write('\nhello,world')#\n可以换行写入
