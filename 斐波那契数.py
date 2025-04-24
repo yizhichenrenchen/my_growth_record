@@ -13,7 +13,7 @@ F(n) = F(n - 1) + F(n - 2)，其中 n > 1
 v = fib(123)
 print(v)"""
 #迭代实现,适合大数计算，计算fib(1000)也仅需1ms
-def fib(n):
+"""def fib(n):
     a, b = 0, 1
     b = 0
     for i in range(n):
@@ -22,14 +22,14 @@ def fib(n):
     return b
 print(fib(3))
 
-#动态规划，更加降低时间复杂度
-"""def fib_d(n,memo={}):
+#动态规划，更加降低时间复杂度"""
+def fib_d(n,memo={}):
     if n <= 1:
         return n
     if n not in memo:
         memo[n] = fib_d(n-1,memo) + fib_d(n-2,memo)
     return memo[n]
 v = fib_d(123)
-print(v)"""
+print(v)
 
 

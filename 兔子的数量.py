@@ -10,3 +10,4 @@ def only(n):
 i=only(int(input()))
 print(i)
 #递归方法
+
